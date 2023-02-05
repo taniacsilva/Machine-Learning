@@ -102,6 +102,7 @@ def load_model():
     pickle_in=open("grade_model.pickle","rb")
 
     linear_model = pickle.load(pickle_in)
+    
     return linear_model
 
 def predict(linear_model, X_test, y_test):
@@ -197,13 +198,10 @@ def main():
     
     print("Evaluating the model and Interpreting...")
 
-    #Accuracy
     print("Accuracy: \n" + str(best_acc))
 
-    #Linear Coefficients   
     print("Linear Coefficients: \n" , linear_model.coef_)
 
-    #Linear Intercept
     print("Intercept: \n" , linear_model.intercept_)
 
     print("Writing grade prediction vs actual grade to a json file...")
