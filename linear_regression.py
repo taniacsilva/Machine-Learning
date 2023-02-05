@@ -190,7 +190,7 @@ def main():
     linear_model = load_model()
 
     X_test = set_used[1]
-    print(type(X_test))
+
     y_test = set_used[3]
 
     predictions = predict(linear_model, X_test, y_test)
