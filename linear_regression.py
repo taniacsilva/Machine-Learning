@@ -146,9 +146,6 @@ def write_to_json(predictions):
         json.dump(predictions, file)
     
 
-#-----------------------------------------Plotting---------------------------------------------#
-
-
 def parse_arguments():
     """This function parses the argument(s) of this model
 
