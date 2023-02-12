@@ -42,7 +42,7 @@ def bench_k_means(estimator, name, x,y):
     f"\nv_measure_score \t{str(round(metrics.v_measure_score(y, estimator.labels_), 3))}",
     f"\nadjusted_rand_score \t{str(round(metrics.adjusted_rand_score(y, estimator.labels_), 3))}",
     f"\nadjusted_mutual_info_score \t{str(round(metrics.adjusted_mutual_info_score(y, estimator.labels_), 3))}",
-    f"\nsilhouette_score \t{str(round(metrics.silhouette_score(x, estimator.labels_, metric='euclidean'), 3))}"    )
+    f"\nsilhouette_score \t{str(round(metrics.silhouette_score(x, estimator.labels_, metric='euclidean'), 3))}")
     
     return 
 
@@ -80,7 +80,6 @@ def main():
 
     x=bench_k_means(clf, "1", x,y)
       
-
 
 if __name__ == '__main__':
     main()
