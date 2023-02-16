@@ -61,4 +61,19 @@ def matrix_matrix_multiplication(U,V):
 
     return result
 
+<<<<<<<< Updated upstream:Extra/Linear_Algebra.py
 matrix_matrix_multiplication(U,V)   
+========
+matrix_matrix_multiplication(U,V)  
+
+#Identity Matrix
+I=np.eye(3)
+V.dot(I)
+
+#Matrix Inverse
+Vs=V[[0,1,3]]
+
+Vs_inv=np.linalg.inv(Vs)
+
+Vs_inv.dot(Vs)
+>>>>>>>> Stashed changes:Extra/Linear_Algebra
